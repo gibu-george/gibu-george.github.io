@@ -18,11 +18,21 @@
             height: 35px; /* Adjust the height as needed */
         }
         footer {
-            margin-top: 50px; /* Adjust the margin to move the footer further down */
+            margin-top: auto; /* Set the top margin to auto to push it to the bottom */
+            padding-top: 20px; /* Add some padding at the top for spacing */
+            background-color: #f9f9f9; /* Optional: Add a background color to the footer */
+        }
+        .container {
+            min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1; /* Allow the content to expand to fill available space */
         }
         /* Adjust the distance between links */
         .page-links {
-            margin-right: 20px; /* You can adjust this value as needed */
+            margin-right: 50px; /* You can adjust this value as needed */
         }
     </style>
 </head>
