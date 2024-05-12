@@ -9,58 +9,126 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="robots" content="noindex, nofollow">
     <style>
-        .social-icons li {
-            display: inline-block;
-            margin-right: 20px; /* Adjust the distance between icons */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-        .social-icons img {
-            width: 35px; /* Adjust the width as needed */
-            height: 35px; /* Adjust the height as needed */
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
-        footer {
-            margin-top: auto; /* Set the top margin to auto to push it to the bottom */
-            padding-top: 20px; /* Add some padding at the top for spacing */
-            background-color: #f9f9f9; /* Optional: Add a background color to the footer */
+
+        h1 {
+            margin: 0;
         }
+
         .container {
-            min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
+
         .content {
-            flex: 1; /* Allow the content to expand to fill available space */
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        /* Adjust the distance between links */
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+
+        footer hr {
+            border-color: #ddd;
+        }
+
+        footer code {
+            font-size: 14px;
+        }
+
         .page-links {
-            margin-right: 50px; /* You can adjust this value as needed */
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .page-links:hover {
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
-    <h1>Gibu George</h1>
-    <h2>PhD Researcher</h2>
-    <p>Institute of Computational Chemistry and Catalysis (IQCC), University of Girona, Spain</p>
-    <p><strong>Email:</strong></p>
-    <p><a href="mailto:gibugeor@gmail.com">gibugeor@gmail.com</a></p>
-    <p><a href="mailto:gibu.george@udg.edu">gibu.george@udg.edu</a></p>
+    <header>
+        <h1>Gibu George</h1>
+        <h2>PhD Researcher</h2>
+        <p>Institute of Computational Chemistry and Catalysis (IQCC), University of Girona, Spain</p>
+    </header>
 
-    <ul class="social-icons">
-        <li><a href="https://scholar.google.com/citations?user=T7VZVMkAAAAJ&hl=en" target="_blank"><img src="images/Google_Scholar.png" alt="Google Scholar"></a></li>
-        <li><a href="https://www.researchgate.net/profile/Gibu-George" target="_blank"><img src="images/ResearchGate.png" alt="ResearchGate"></a></li>
-        <li><a href="https://orcid.org/0000-0003-4701-9860" target="_blank"><img src="images/ORCID.png" alt="ORCID"></a></li>
-        <li><a href="https://www.webofscience.com/wos/author/record/AAI-2379-2020" target="_blank"><img src="images/web_of_science.jpg" alt="Web of Science"></a></li>
-        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57383118700" target="_blank"><img src="images/scopus.png" alt="Scopus"></a></li>
-        <li><a href="https://twitter.com/GibuGeorge_" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
-        <li><a href="https://www.linkedin.com/in/gibu-george-71b649146/" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
-    </ul>  
+    <div class="container">
+        <div class="content">
+            <p><strong>Email:</strong></p>
+            <p><a href="mailto:gibugeor@gmail.com">gibugeor@gmail.com</a></p>
+            <p><a href="mailto:gibu.george@udg.edu">gibu.george@udg.edu</a></p>
 
-    <h3><strong>About me</strong></h3>
-    <p>I am a Computational Chemist, currently working on charge transfer processes with a focus on fullerene donor/acceptor dyads and fullerene:perovskite hybrid solar cells.</p>
+            <ul class="social-icons">
+                <li><a href="https://scholar.google.com/citations?user=T7VZVMkAAAAJ&hl=en" target="_blank"><img src="images/Google_Scholar.png" alt="Google Scholar"></a></li>
+                <li><a href="https://www.researchgate.net/profile/Gibu-George" target="_blank"><img src="images/ResearchGate.png" alt="ResearchGate"></a></li>
+                <li><a href="https://orcid.org/0000-0003-4701-9860" target="_blank"><img src="images/ORCID.png" alt="ORCID"></a></li>
+                <li><a href="https://www.webofscience.com/wos/author/record/AAI-2379-2020" target="_blank"><img src="images/web_of_science.jpg" alt="Web of Science"></a></li>
+                <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57383118700" target="_blank"><img src="images/scopus.png" alt="Scopus"></a></li>
+                <li><a href="https://twitter.com/GibuGeorge_" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/gibu-george-71b649146/" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
+            </ul>  
 
-    <!-- Added class "page-links" to the links for adjusting margin -->
-    <a href="Experience_Education.html" class="page-links">Experience & Education</a>     
-    <a href="Publications.html" class="page-links">List of publications</a>  
+            <h3><strong>About me</strong></h3>
+            <p>I am a Computational Chemist, currently working on charge transfer processes with a focus on fullerene donor/acceptor dyads and fullerene:perovskite hybrid solar cells.</p>
+
+            <!-- Adjusted margin for page links -->
+            <a href="Experience_Education.html" class="page-links">Experience & Education</a>     
+            <a href="Publications.html" class="page-links">List of publications</a>  
+        </div>
+    </div>
 
     <footer>
         <hr>
