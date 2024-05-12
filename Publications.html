@@ -8,47 +8,89 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="robots" content="noindex, nofollow">
     <style>
-        /* Add margin-bottom to create space between each publication */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
         ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-bottom: 20px;
+        }
+
+        li strong {
+            font-size: 1.1em;
+        }
+
+        li .description {
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer hr {
+            border-color: #ddd;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <h2>Publications</h2>
     <ul>
-      <p>Click on the doi to see the paper on the website of the publisher.</p>
-      <li>
-            <strong>Interaction of C60 with methylammonium lead iodide perovskite surfaces: Unveiling the Role of C60 in Surface Engineering</strong><br>
-            G. George, S Posada-Pérez<br>
-            Chem. Eur. J., 2024, e202401283.<br>
-            <a href="https://doi.org/10.1002/chem.202401283" target="_blank">DOI</a>
-      </li>
-      <li>
-            <strong>Unveiling Oxygen Evolution Reaction on LiCoO2 Cathode: Insights for the Development of High‐Performance Aqueous Lithium‐ion Batteries</strong><br>
-            G. George, A. Poater, M. Solà, S. Posada‐Pérez<br>
-            Batter. Supercaps., 2024, 7, e202300452.<br>
-            <a href="https://doi.org/10.1002/batt.202300452" target="_blank">DOI</a>
-      </li>
-      <li>
+        <p>Click on the doi to see the paper on the website of the publisher.</p>
+        <li>
             <strong>Exploring Fullerene-Perovskite Interactions by Means of Density Functional Simulations</strong><br>
             S. Posada-Perez, G. George, A. Poater, M. Solà<br>
             ECS Meeting Abstracts., 2023, 244, 1027-1027.<br>
             <a href="https://doi.org/10.1149/MA2023-0291027mtgabs" target="_blank">DOI</a>
-      </li>
-      <li>
+        </li>
+        <li>
             <strong>Photoinduced Electron Transfer in Dyads Involving Complexes of C60 and Nanohoops. Effect of π-Extension and Aromaticity of the Nanohoop</strong><br>
             M. Solà, G. George, O. A. Stasyuk, A. J. Stasyuk, A. A. Voityuk<br>
             ECS Meeting Abstracts., 2023, 243, 1277-1277.<br>
             <a href="https://doi.org/10.1149/MA2023-01121277mtgabs" target="_blank">DOI</a>
-       </li>
-       <li>
+        </li>
+        <li>
             <strong>Orbital Understanding to the Origin of Site-Specific Band Gap Tuning in Electron-Rich S-Doped and Electron Precise C, S-Dual-Doped Graphitic Carbon Nitride</strong><br>
             M. Sadik N. K, G. George, S. De<br>
             J. Phys. Chem. C., 2023, 127, 14741-14755.<br>
             <a href="https://doi.org/10.1021/acs.jpcc.3c02901" target="_blank">DOI</a>
-       </li>
-       <li>
+        </li>
+        <li>
             <strong>A step towards rational design of carbon nanobelts with tunable electronic properties</strong><br>
             G. George, O. A. Stasyuk, M. Solà, A. J. Stasyuk<br>
             Nanoscale., 2023, 15, 17373-17385.<br>
@@ -83,6 +125,3 @@
     <footer>
         <hr>
         <a href="index.html">Back to Home</a>
-    </footer>
-</body>
-</html>
