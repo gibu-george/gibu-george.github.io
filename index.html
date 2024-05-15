@@ -34,9 +34,12 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            max-width: 100%; /* Ensure container doesn't exceed viewport width */
+            padding: 0 20px; /* Add padding to prevent content from touching the edges */
         }
 
         .content {
+            width: 100%; /* Ensure content width matches container width */
             max-width: 600px;
             text-align: center;
             padding: 20px;
