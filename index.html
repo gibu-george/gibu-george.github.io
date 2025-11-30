@@ -69,10 +69,14 @@
         }
 
         .social-icons {
-            padding: 0;
-            margin: 16px 0 30px 0;
             list-style: none;
-            text-align: center; /* ⭐ CENTER icons */
+            padding: 0;
+            margin: 20px 0 30px 0;
+            display: flex; /* ⭐ place icons in a row */
+            justify-content: center; /* ⭐ center them */
+            flex-wrap: wrap; /* prevents overflow on small screens */
+            gap: 12px; /* nice spacing between icons */
+            text-align: center;/
         }
 
         .social-icons li {
