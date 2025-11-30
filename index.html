@@ -8,133 +8,172 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="robots" content="noindex, nofollow">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            font-family: "Arial", sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #222;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            padding: 25px 10px;
             text-align: center;
-            padding: 20px 0;
+            background-color: #ffffff;
+            border-bottom: 3px solid #333;
         }
 
         h1 {
             margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 4px 0;
+            font-size: 15px;
         }
 
         .container {
+            flex: 1;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            align-items: flex-start;
+            padding: 40px 20px;
         }
 
         .content {
-            max-width: 600px;
+            width: 100%;
+            max-width: 680px;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
             text-align: center;
-            padding: 80px 20px 40px 20px; /* Increased padding */
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            min-height: 550px; /* Reduced minimum height */
+            box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: #0074D9;
+            font-weight: bold;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
         }
 
         .social-icons {
-            list-style: none;
             padding: 0;
-            margin-top: 20px;
+            margin: 16px 0 30px 0;
+            list-style: none;
         }
 
         .social-icons li {
             display: inline-block;
-            margin: 0 10px;
+            margin: 0 8px;
         }
 
         .social-icons img {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
-            transition: transform 0.3s ease-in-out;
+            background: #ffffff;
+            padding: 4px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
 
         .social-icons img:hover {
-            transform: scale(1.1);
-        }
-
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #888;
-        }
-
-        footer hr {
-            border-color: #ddd;
-        }
-
-        footer code {
-            font-size: 14px;
+            transform: scale(1.15);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.16);
         }
 
         .page-links {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 16px;
             text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            border: 2px solid #333;
-            border-radius: 25px;
-            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            width: 240px;
+            padding: 12px;
+            font-size: 15px;
+            background-color: #333;
+            color: #ffffff;
+            border-radius: 30px;
+            transition: all 0.3s ease-in-out;
         }
 
         .page-links:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #0074D9;
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #444;
+        }
+
+        footer hr {
+            width: 90%;
+            border: none;
+            border-top: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Gibu George, PhD</h1>
-        <!-- <h2>Postdoctoral Researcher</h2> -->
-        <p>Postdoctoral Researcher</p>
-        <p>Institute of Chemical Research of Catalonia (ICIQ), Tarragona, Spain</p>
-    </header>
 
-    <div class="container">
-        <div class="content">
-            <p><strong>Email:</strong></p>
-            <p><a href="mailto:ggeorge@iciq.es">ggeorge@iciq.es</a></p>
-            <!-- <p><a href="mailto:gibugeor@gmail.com">gibugeor@gmail.com</a></p> -->
+<header>
+    <h1>Gibu George, PhD</h1>
+    <p><strong>Postdoctoral Researcher</strong></p>
+    <p>Institute of Chemical Research of Catalonia (ICIQ), Tarragona, Spain</p>
+</header>
 
-            <ul class="social-icons">
-                <li><a href="https://scholar.google.com/citations?user=T7VZVMkAAAAJ&hl=en" target="_blank"><img src="images/Google_Scholar.png" alt="Google Scholar"></a></li>
-                <li><a href="https://www.researchgate.net/profile/Gibu-George" target="_blank"><img src="images/ResearchGate.png" alt="ResearchGate"></a></li>
-                <li><a href="https://orcid.org/0000-0003-4701-9860" target="_blank"><img src="images/ORCID.png" alt="ORCID"></a></li>
-                <li><a href="https://www.webofscience.com/wos/author/record/AAI-2379-2020" target="_blank"><img src="images/web_of_science.jpg" alt="Web of Science"></a></li>
-                <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57383118700" target="_blank"><img src="images/scopus.png" alt="Scopus"></a></li>
-                <li><a href="https://twitter.com/GibuGeorge_" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/gibu-george-71b649146/" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
-            </ul>
+<div class="container">
+    <div class="content">
 
-            <h3><strong>About me</strong></h3>
-            <p>I am a computational chemist working with electronic-structure methods and mechanistic modelling, with research spanning photocatalysis, charge-transfer processes, and materials for energy applications.</p>
+        <p><strong>Email:</strong></p>
+        <p><a href="mailto:ggeorge@iciq.es">ggeorge@iciq.es</a></p>
 
+        <ul class="social-icons">
+            <li><a href="https://scholar.google.com/citations?user=T7VZVMkAAAAJ&hl=en" target="_blank"><img src="images/Google_Scholar.png" alt="Google Scholar"></a></li>
+            <li><a href="https://www.researchgate.net/profile/Gibu-George" target="_blank"><img src="images/ResearchGate.png" alt="ResearchGate"></a></li>
+            <li><a href="https://orcid.org/0000-0003-4701-9860" target="_blank"><img src="images/ORCID.png" alt="ORCID"></a></li>
+            <li><a href="https://www.webofscience.com/wos/author/record/AAI-2379-2020" target="_blank"><img src="images/web_of_science.jpg" alt="Web of Science"></a></li>
+            <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57383118700" target="_blank"><img src="images/scopus.png" alt="Scopus"></a></li>
+            <li><a href="https://twitter.com/GibuGeorge_" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/gibu-george-71b649146/" target="_blank"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
+        </ul>
+
+        <h3><strong>About me</strong></h3>
+        <p>I am a computational chemist working with electronic-structure methods and mechanistic modelling, with research spanning photocatalysis, charge-transfer processes, and materials for energy applications.</p>
+
+        <div>
             <a href="Experience_Education.html" class="page-links">Experience & Education</a>
+        </div>
+
+        <div>
             <a href="Publications_year.html" class="page-links">List of publications</a>
         </div>
+
     </div>
+</div>
 
-    <footer>
-        <hr>
-        <code>(c) 2025 Gibu George</code>
-    </footer>
+<footer>
+    <hr>
+    <code>(c) 2025 Gibu George</code>
+</footer>
+
 </body>
-
 </html>
