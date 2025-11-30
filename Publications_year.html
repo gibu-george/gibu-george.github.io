@@ -1,120 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .year-toggle {
+            width: 200px;
+            margin: 15px auto;
+            padding: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #333;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .year-toggle:hover {
+            background-color: #555;
+        }
+
+        ul.pub-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            display: none; /* collapsed initially */
+        }
+
+        li {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        li strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #0047AB;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
 <body>
-    <h2>Publications</h2>
-    <p style="text-align:center;">Click a year to expand the list</p>
 
-    <!-- ===== YEAR 2025 ===== -->
-    <div class="year-section">
-        <button class="year-toggle">2025 ▼</button>
-        <ul class="pub-list">
-            <li>
-                <strong>The (Anti)aromatic Properties of Cyclo[n]Carbons: Myth or Reality?</strong><br>
-                O. A. Stasyuk, G. George, C. Curutchet, F. Plasser, A. J. Stasyuk<br>
-                J. Comput. Chem., 2025, 46, e70283.<br>
-                <a href="https://doi.org/10.1002/jcc.70283" target="_blank">DOI</a>
-            </li>
-            <li>
-                <strong>Computational study and design of materials for photovoltaic applications</strong><br>
-                G. George<br>
-                Universitat de Girona, 2025.<br>
-                <a href="http://hdl.handle.net/10803/694621" target="_blank">Thesis</a>
-            </li>
-            <li>
-                <strong>Surface Engineering for Enhanced Perovskite Solar Cells...</strong><br>
-                G. George, D. I. Sharapa, A. J. Stasyuk, A. Poater, M. Solà, S. Posada-Pérez<br>
-                Sol. Energy Mater. Sol. Cells, 2025, 283, 113441.<br>
-                <a href="https://doi.org/10.1016/j.solmat.2025.113441" target="_blank">DOI</a>
-            </li>
-            <li>
-                <strong>A new view of missense mutations in α-mannosidosis...</strong><br>
-                Protein Sci., 2025, 34, e70080.<br>
-                <a href="https://doi.org/10.1002/pro.70080" target="_blank">DOI</a>
-            </li>
-        </ul>
-    </div>
+<h2>Publications</h2>
+<p>Click a year to show the publications. Click the DOI to open the paper.</p>
 
-    <!-- ===== YEAR 2024 ===== -->
-    <div class="year-section">
-        <button class="year-toggle">2024 ▼</button>
-        <ul class="pub-list">
-            <li>
-                <strong>Unlocking the Limitations of Layered LiNiO<sub>2</sub>...</strong><br>
-                J. Power Sources, 2024, 625, 235650.<br>
-                <a href="https://doi.org/10.1016/j.jpowsour.2024.235650" target="_blank">DOI</a>
-            </li>
-            <li>
-                <strong>Interaction of C<sub>60</sub> with MAPbI<sub>3</sub>...</strong><br>
-                Chem. Eur. J., 2024, e202401283.<br>
-                <a href="https://doi.org/10.1002/chem.202401283" target="_blank">DOI</a>
-            </li>
-            <li>
-                <strong>Unveiling Oxygen Evolution Reaction on LiCoO<sub>2</sub>...</strong><br>
-                Batter. Supercaps, 2024, 7, e202300452.<br>
-                <a href="https://doi.org/10.1002/batt.202300452" target="_blank">DOI</a>
-            </li>
-        </ul>
-    </div>
+<button id="toggleAll" class="year-toggle">Show All</button>
 
-    <!-- ===== YEAR 2023 ===== -->
-    <div class="year-section">
-        <button class="year-toggle">2023 ▼</button>
-        <ul class="pub-list">
-            <li><strong>Exploring Fullerene-Perovskite Interactions…</strong><br>ECS Meeting Abstracts, 2023.<br><a href="https://doi.org/10.1149/MA2023-0291027mtgabs" target="_blank">DOI</a></li>
+<!-- YEAR 2025 -->
+<button class="year-toggle">2025</button>
+<ul class="pub-list">
+    <li><strong>The (Anti)aromatic Properties of Cyclo[n]Carbons: Myth or Reality?</strong><br>
+    O. A. Stasyuk, G. George, C. Curutchet, F. Plasser, A. J. Stasyuk<br>
+    J. Comput. Chem., 2025<br>
+    <a href="https://doi.org/10.1002/jcc.70283" target="_blank">DOI</a></li>
 
-            <li><strong>Photoinduced Electron Transfer in Dyads…</strong><br>ECS Meeting Abstracts, 2023.<br><a href="https://doi.org/10.1149/MA2023-01121277mtgabs" target="_blank">DOI</a></li>
+    <li><strong>A new view of missense mutations in α-mannosidosis using molecular dynamics conformational ensembles</strong><br>
+    S. Mandl, B. Di. Geronimo, S. Alonso-Gil, G. George et al.<br>
+    Protein Sci., 2025<br>
+    <a href="https://doi.org/10.1002/pro.70080" target="_blank">DOI</a></li>
 
-            <li><strong>Orbital Understanding to the Origin…</strong><br>J. Phys. Chem. C, 2023.<br><a href="https://doi.org/10.1021/acs.jpcc.3c02901" target="_blank">DOI</a></li>
+    <li><strong>Surface Engineering for Enhanced Perovskite Solar Cells: Fullerene-Mediated Trap State Formation on CsPbI<sub>3</sub></strong><br>
+    G. George et al.<br>
+    Sol. Energy Mater. Sol. Cells, 2025<br>
+    <a href="https://doi.org/10.1016/j.solmat.2025.113441" target="_blank">DOI</a></li>
 
-            <li><strong>A step towards rational design of carbon nanobelts…</strong><br>Nanoscale, 2023.<br><a href="https://doi.org/10.1039/D3NR04045C" target="_blank">DOI</a></li>
+    <li><strong>Unlocking the Limitations of Layered LiNiO<sub>2</sub></strong><br>
+    G. George et al.<br>
+    J. Power Sources, 2025<br>
+    <a href="#" target="_blank">DOI</a></li>
+</ul>
 
-            <li><strong>Excited state processes in supramolecular complexes…</strong><br>Chem. Eur. J., 2023.<br><a href="https://doi.org/10.1002/chem.202300503" target="_blank">DOI</a></li>
+<!-- YEAR 2024 -->
+<button class="year-toggle">2024</button>
+<ul class="pub-list">
+    <li><strong>Prediction of the ground state for indenofluorene-type systems</strong><br>
+    G. George et al.<br>
+    Chem. Sci., 2024<br>
+    <a href="https://doi.org/10.1039/D4SC03465A" target="_blank">DOI</a></li>
 
-            <li><strong>Aromaticity controls the excited-state properties…</strong><br>Nanoscale, 2023.<br><a href="https://doi.org/10.1039/D2NR04037A" target="_blank">DOI</a></li>
-        </ul>
-    </div>
+    <li><strong>Interaction of C<sub>60</sub> with MAPbI<sub>3</sub> surfaces</strong><br>
+    G. George, S. Posada-Pérez<br>
+    Chem. Eur. J., 2024<br>
+    <a href="#" target="_blank">DOI</a></li>
 
-    <!-- ===== YEAR 2022 ===== -->
-    <div class="year-section">
-        <button class="year-toggle">2022 ▼</button>
-        <ul class="pub-list">
-            <li>
-                <strong>Density Functional Investigation of H<sub>2</sub>O with Li<sub>1-x</sub>Mn<sub>2</sub>O<sub>4</sub>…</strong><br>
-                Appl. Surf. Sci., 2022.<br>
-                <a href="https://doi.org/10.1016/j.apsusc.2022.155822" target="_blank">DOI</a>
-            </li>
-            <li>
-                <strong>Reactivity of superhalogen/superalkali ion encapsulating C<sub>60</sub>…</strong><br>
-                Dalton Trans., 2022.<br>
-                <a href="https://doi.org/10.1039/D1DT03577K" target="_blank">DOI</a>
-            </li>
-        </ul>
-    </div>
+    <li><strong>Unveiling Oxygen Evolution Reaction on LiCoO<sub>2</sub></strong><br>
+    G. George et al.<br>
+    Batter. Supercaps, 2024<br>
+    <a href="#" target="_blank">DOI</a></li>
+</ul>
 
-    <br>
-    <div style="text-align:center;">
-        <button id="toggleAll">Show All</button>
-    </div>
+<!-- YEAR 2023 -->
+<button class="year-toggle">2023</button>
+<ul class="pub-list">
+    <li><strong>Aromaticity controls the excited-state properties of host-guest complexes</strong><br>
+    G. George et al.<br>
+    Nanoscale, 2023<br>
+    <a href="#" target="_blank">DOI</a></li>
+</ul>
 
-    <footer>
-        <hr>
-        <a href="index.html">Back to Home</a>
-    </footer>
+<!-- Add additional YEARS in the same structure as above -->
 
-    <script>
-        const toggles = document.querySelectorAll(".year-toggle");
-        const lists = document.querySelectorAll(".pub-list");
-        const toggleAllBtn = document.getElementById("toggleAll");
+<footer>
+    <hr>
+    <a href="index.html">Back to Home</a>
+</footer>
 
-        toggles.forEach((toggle, index) => {
+<script>
+    const toggles = document.querySelectorAll(".year-toggle");
+    const lists = document.querySelectorAll(".pub-list");
+    const toggleAllBtn = document.getElementById("toggleAll");
+    let allVisible = false;
+
+    // keep all initially collapsed
+    lists.forEach(list => list.style.display = "none");
+
+    toggles.forEach((toggle, index) => {
+        if (toggle.id !== "toggleAll") {
             toggle.addEventListener("click", () => {
-                const list = lists[index];
+                const list = lists[index - 1];
                 list.style.display = list.style.display === "block" ? "none" : "block";
             });
-        });
+        }
+    });
 
-        toggleAllBtn.addEventListener("click", () => {
-            const allVisible = [...lists].every(list => list.style.display === "block");
-            lists.forEach(list => list.style.display = allVisible ? "none" : "block");
-            toggleAllBtn.textContent = allVisible ? "Show All" : "Hide All";
-        });
-    </script>
+    toggleAllBtn.addEventListener("click", () => {
+        allVisible = !allVisible;
+        lists.forEach(list => list.style.display = allVisible ? "block" : "none");
+        toggleAllBtn.textContent = allVisible ? "Hide All" : "Show All";
+    });
+</script>
+
 </body>
+</html>
+
