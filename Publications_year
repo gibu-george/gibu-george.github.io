@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        li strong {
+            font-size: 1.1em;
+        }
+
+        li .description {
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer hr {
+            border-color: #ddd;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Publications</h2>
+    <p style="text-align:center;">Click a year to expand the publication list.</p>
+
+    <div class="year-section">
+        <button class="year-toggle">2025 ▼</button>
+        <ul class="pub-list">
+            <li>
+                <strong>The (Anti)aromatic Properties of Cyclo[n]Carbons: Myth or Reality?</strong><br>
+                O. A. Stasyuk, G. George, C. Curutchet, F. Plasser, A. J. Stasyuk<br>
+                J. Comput. Chem., 2025, 46, e70283.<br>
+                <a href="https://doi.org/10.1002/jcc.70283" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Computational study and design of materials for photovoltaic applications</strong><br>
+                G. George<br>
+                Universitat de Girona, 2025.<br>
+                <a href="http://hdl.handle.net/10803/694621" target="_blank">Thesis</a>
+            </li>
+            <li>
+                <strong>A new view of missense mutations in α-mannosidosis using molecular dynamics conformational ensembles</strong><br>
+                S. Mandl, B. Di. Geronimo, S. Alonso-Gil, C. Grininger, G. George, U. Ferstl, S. A. Herzog, B. Zagrovic, C. Nusshold, T. Pavkov-Keller, P. A. Sánchez-Murcia<br>
+                Protein Sci., 2025, 34, e70080.<br>
+                <a href="https://doi.org/10.1002/pro.70080" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Surface Engineering for Enhanced Perovskite Solar Cells: Fullerene-Mediated Trap State Formation on CsPbI<sub>3</sub> (001) Surface</strong><br>
+                G. George, D. I. Sharapa, A. J. Stasyuk, A. Poater, M. Solà, S. Posada-Pérez<br>
+                Sol. Energy Mater. Sol. Cells, 2025, 283, 113441.<br>
+                <a href="https://doi.org/10.1016/j.solmat.2025.113441" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Unlocking the Limitations of Layered LiNiO<sub>2</sub>: Insights from Dft Simulations on its Viability as a Cathode Material for Aqueous Lithium-Ion Batteries</strong><br>
+                G. George, A. Brotons-Rufes, M. Solà, A. Poater, S Posada-Pérez<br>
+                J. Power Sources, 2025, 625, 235650.<br>
+                <a href="https://www.sciencedirect.com/science/article/pii/S0378775324016021" target="_blank">DOI</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="year-section">
+        <button class="year-toggle">2024 ▼</button>
+        <ul class="pub-list">
+            <li>
+                <strong>Prediction of the ground state for indenofluorene-type systems with Clar's π-sextet model</strong><br>
+                G. George, A. J. Stasyuk, M. Solà<br>
+                Chem. Sci., 2024, 15, 13676-13687.<br>
+                <a href="https://doi.org/10.1039/D4SC03465A" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Interaction of C<sub>60</sub> with methylammonium lead iodide perovskite surfaces: Unveiling the Role of C<sub>60</sub> in Surface Engineering</strong><br>
+                G. George, S Posada-Pérez<br>
+                Chem. Eur. J., 2024, e202401283.<br>
+                <a href="https://doi.org/10.1002/chem.202401283" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Unveiling Oxygen Evolution Reaction on LiCoO<sub>2</sub> Cathode: Insights for the Development of High‐Performance Aqueous Lithium‐ion Batteries</strong><br>
+                G. George, A. Poater, M. Solà, S. Posada‐Pérez<br>
+                Batter. Supercaps, 2024, 7, e202300452.<br>
+                <a href="https://doi.org/10.1002/batt.202300452" target="_blank">DOI</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="year-section">
+        <button class="year-toggle">2023 ▼</button>
+        <ul class="pub-list">
+            <li>
+                <strong>Exploring Fullerene-Perovskite Interactions by Means of Density Functional Simulations</strong><br>
+                S. Posada-Perez, G. George, A. Poater, M. Solà<br>
+                ECS Meeting Abstracts, 2023, 244, 1027-1027.<br>
+                <a href="https://doi.org/10.1149/MA2023-0291027mtgabs" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Photoinduced Electron Transfer in Dyads Involving Complexes of C<sub>60</sub> and Nanohoops. Effect of π-Extension and Aromaticity of the Nanohoop</strong><br>
+                M. Solà, G. George, O. A. Stasyuk, A. J. Stasyuk, A. A. Voityuk<br>
+                ECS Meeting Abstracts, 2023, 243, 1277-1277.<br>
+                <a href="https://doi.org/10.1149/MA2023-01121277mtgabs" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Orbital Understanding to the Origin of Site-Specific Band Gap Tuning in Electron-Rich S-Doped and Electron Precise C, S-Dual-Doped Graphitic Carbon Nitride</strong><br>
+                M. Sadik N. K, G. George, S. De<br>
+                J. Phys. Chem. C, 2023, 127, 14741-14755.<br>
+                <a href="https://doi.org/10.1021/acs.jpcc.3c02901" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>A step towards rational design of carbon nanobelts with tunable electronic properties</strong><br>
+                G. George, O. A. Stasyuk, M. Solà, A. J. Stasyuk<br>
+                Nanoscale, 2023, 15, 17373-17385.<br>
+                <a href="https://doi.org/10.1039/D3NR04045C" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Excited state processes in supramolecular complexes of cyclic dibenzopyrrolopyrroles isomers with C<sub>60</sub> fullerene</strong><br>
+                G. George, O. A. Stasyuk, A. A. Voityuk, A. J. Stasyuk, M. Solà<br>
+                Chem. Eur. J., 2023, e202300503.<br>
+                <a href="https://doi.org/10.1002/chem.202300503" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Aromaticity controls the excited-state properties of host-guest complexes of nanohoops</strong><br>
+                G. George, O. A. Stasyuk, A. A. Voityuk, A. J. Stasyuk, M. Solà<br>
+                Nanoscale, 2023, 15, 1221-1229.<br>
+                <a href="https://doi.org/10.1039/D2NR04037A" target="_blank">DOI</a>
+            </li>
+            <li>
+                <strong>Density Functional Investigation of the Interaction of H<sub>2</sub>O with Spinel Li<sub>1-x</sub>Mn<sub>2</sub>O<sub>4</sub> Surfaces: Implications for Aqueous Li-ion Batteries</strong><br>
+                G. George, S. Posada-Pérez, A. Poater, M. Solà<br>
+                Appl. Surf. Sci., 2023, 612, 155822.<br>
+                <a href="https://doi.org/10.1016/j.apsusc.2022.155822" target="_blank">DOI</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="year-section">
+        <button class="year-toggle">2022 ▼</button>
+        <ul class="pub-list">
+            <li>
+                <strong>Reactivity of the superhalogen/superalkali ion encapsulating C<sub>60</sub> fullerenes</strong><br>
+                G. George, A. J. Stasyuk, M. Solà<br>
+                Dalton Trans., 2022, 51, 203-210.<br>
+                <a href="https://doi.org/10.1039/D1DT03577K" target="_blank">DOI</a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <div style="text-align:center;">
+        <button id="toggleAll">Show All</button>
+    </div>
+
+
+    <footer>
+        <hr>
+        <a href="index.html">Back to Home</a>
