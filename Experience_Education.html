@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="robots" content="noindex, nofollow">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,32 +18,36 @@
 
         h1 {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 30px;
+            font-size: 2rem;
         }
 
         .section-container {
             display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            max-width: 1200px;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            max-width: 1100px;
             margin: 0 auto;
+            flex-wrap: wrap; /* Responsive columns */
         }
 
         .section {
-            flex: 1;
-            margin-right: 20px; /* Adjust margin as needed */
+            flex: 1 1 450px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 20px 25px;
+            min-width: 300px;
         }
 
-        .section:last-child {
-            margin-right: 0;
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
         }
 
         .timeline {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
 
@@ -50,21 +55,26 @@
             margin-bottom: 20px;
         }
 
-        .timeline li .dates {
+        .timeline .dates {
             font-weight: bold;
+            color: #444;
         }
 
-        .timeline li .description {
-            margin-top: 5px;
+        .timeline .description {
+            margin-top: 3px;
+            line-height: 1.4;
+            color: #222;
         }
 
         footer {
             text-align: center;
-            margin-top: 50px;
+            margin: 40px 0 30px 0;
+            color: #555;
         }
 
         footer hr {
             border-color: #ddd;
+            width: 90%;
         }
 
         footer a {
@@ -74,6 +84,7 @@
             padding: 10px 20px;
             border: 2px solid #333;
             border-radius: 25px;
+            display: inline-block;
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         }
 
